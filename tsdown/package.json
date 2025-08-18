@@ -1,0 +1,10 @@
+{
+  "name": "my-tsdown-project",
+  "type": "module",
+  "scripts": {
+    "build": "tsdown"
+  },
+  "devDependencies": {
+    "tsdown": "^0.9.0"
+  }
+}
