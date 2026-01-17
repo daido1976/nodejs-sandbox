@@ -5,7 +5,9 @@
   "scripts": {
     "build": "email build",
     "dev": "email dev",
-    "export": "email export"
+    "export": "email export",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@react-email/components": "1.0.4",
@@ -14,8 +16,12 @@
   },
   "devDependencies": {
     "@react-email/preview-server": "5.2.5",
+    "@storybook/react": "^8.5.0",
+    "@storybook/react-vite": "^8.5.0",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
-    "react-email": "5.2.5"
+    "react-email": "5.2.5",
+    "storybook": "^8.5.0",
+    "vite": "^6.0.0"
   }
 }
