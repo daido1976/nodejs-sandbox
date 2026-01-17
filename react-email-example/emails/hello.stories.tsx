@@ -4,9 +4,6 @@ import { HelloEmail } from "./hello";
 const meta = {
   title: "Emails/HelloEmail",
   component: HelloEmail,
-  argTypes: {
-    name: { control: "text" },
-  },
 } satisfies Meta<typeof HelloEmail>;
 
 export default meta;
@@ -14,12 +11,18 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    name: "World",
+    name: "田中太郎",
+    message: "アカウントが作成されました。下のボタンからログインしてください。",
+    buttonText: "ログイン",
+    buttonUrl: "https://example.com/login",
   },
 };
 
-export const WithCustomName: Story = {
+export const Welcome: Story = {
   args: {
-    name: "田中さん",
+    name: "John",
+    message: "Welcome to our service! Click below to get started.",
+    buttonText: "Get Started",
+    buttonUrl: "https://example.com/start",
   },
 };
