@@ -1,0 +1,10 @@
+{
+  "name": "play-sentry",
+  "version": "1.0.0",
+  "scripts": {
+    "sentry:test": "node --import ./src/instrument.mjs ./src/app.mjs"
+  },
+  "dependencies": {
+    "@sentry/node": "^10.38.0"
+  }
+}
